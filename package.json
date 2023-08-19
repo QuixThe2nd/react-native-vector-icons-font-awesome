@@ -3,10 +3,7 @@
   "version": "10.0.0",
   "description": "Customizable Icons for React Native with support for NavBar/TabBar, image source and full styling.",
   "main": "dist/index.js",
-  "bin": {
-    "fa-upgrade.sh": "./bin/fa-upgrade.sh",
-    "fa5-upgrade": "./bin/fa5-upgrade.sh",
-    "fa6-upgrade": "./bin/fa6-upgrade.sh",
+  "bin": 
     "generate-icon": "./bin/generate-icon.js"
   },
   "scripts": {
@@ -15,22 +12,7 @@
     "prepublish": "npm run build-web && npm run build-flow",
     "build": "./scripts/build-icons.sh",
     "build-web": "rm -rf ./dist && babel *.js --out-dir ./dist && babel lib --out-dir ./dist/lib && cp -R ./glyphmaps ./dist/glyphmaps",
-    "build-flow": "./scripts/build-flow.sh",
-    "build-antd": "./scripts/antdesign.sh",
-    "build-entypo": "./scripts/entypo.sh",
-    "build-evilicons": "./scripts/evilicons.sh",
-    "build-fontawesome": "./scripts/fontawesome.sh",
-    "build-fontawesome5": "./scripts/fontawesome5.sh",
-    "build-fontawesome6": "./scripts/fontawesome6.sh",
-    "build-fontisto": "./scripts/fontisto.sh",
-    "build-feather": "./scripts/feather.sh",
-    "build-foundation": "./scripts/foundation.sh",
     "build-ionicons": "./scripts/ionicons.sh",
-    "build-materialicons": "./scripts/materialicons.sh",
-    "build-materialcommunityicons": "./scripts/materialcommunityicons.sh",
-    "build-octicons": "./scripts/octicons.sh",
-    "build-zocial": "./scripts/zocial.sh",
-    "build-simplelineicons": "./scripts/simplelineicons.sh"
   },
   "keywords": [
     "react-native",
@@ -60,7 +42,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/oblador/react-native-vector-icons.git"
+    "url": "git://github.com/quixthe2nd/react-native-vector-icons-ionicons.git"
   },
   "license": "MIT",
   "dependencies": {
@@ -70,9 +52,6 @@
   "devDependencies": {
     "@babel/cli": "^7.12.9",
     "@babel/core": "^7.12.9",
-    "@entypo-icons/core": "^1.0.1",
-    "@mdi/font": "^6.5.95",
-    "@primer/octicons": "^16.3.1",
     "babel-eslint": "^10.1.0",
     "css-social-buttons": "^1.1.1",
     "eslint": "^7.2.0",
@@ -83,16 +62,11 @@
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-react-hooks": "^4",
-    "evil-icons": "^1.10.1",
-    "feather-icons": "^4.28.0",
-    "font-awesome": "^4.7.0",
-    "fontisto": "^3.0.4",
     "ionicons": "^7.1.0",
     "metro-react-native-babel-preset": "^0.66.2",
     "oslllo-svg-fixer": "^2.2.0",
     "prettier": "^1.19.1",
     "react": "^17.0.2",
-    "simple-line-icons": "^2.5.5",
     "svg2ttf": "^6.0.3",
     "svgicons2svgfont": "^12.0.0"
   },
